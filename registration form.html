@@ -1,0 +1,365 @@
+<html>
+
+  <head>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".submit").click(function(){
+     alert("You successfully submit the form");
+  });
+});
+
+$(document).ready(function(){
+  $("#reset").click(function(){
+     alert("You reset the form");
+  });
+});
+</script>
+
+   
+    
+<style>
+img{
+height:30%;
+width:25%;
+border-radius:100px;
+border:2px solid black;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px orange;
+}
+body{
+height:100%;
+width:100%;
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+
+</style> 
+ </head>
+
+<body bgcolor="#6d616f">
+  
+<img src="C:\Users\Khushi Garg\Desktop\Project 6th Sem\logo(1).png">
+<form>
+ <table>
+<tr>
+
+  <td colspan=2>
+<center><h1><b>Student Registration Form</b></h1></center>
+
+  </td>
+
+  </tr>
+  </table >
+<fieldset style="border:1px solid black">
+<table>
+
+
+  <legend> <b> Personal Information</b> </legend>
+
+
+
+<tr>
+
+  <td>Name</td>
+
+  <td><input type=text name=textnames id="textname" size="30"></td>
+
+  </tr>
+
+<tr>
+
+  <td>Father's  Name</td>
+
+  <td><input type="text" name="father's name" id="fathername"
+
+  size="30"></td>
+
+  </tr>
+
+  <tr>
+
+  <td>Mother's Name</td>
+
+  <td><input type="text" name="mother's name" id="mother's name" size="30"></td>
+
+  </tr>
+
+
+<tr>
+
+  <td>Gender</td>
+
+  <td><input type="radio" name="sex" value="male" size="10">Male
+
+  <input type="radio" name="sex" value="Female" size="10">Female
+
+  <input type="radio" name="sex" value="other" size="10">other</td>
+
+  </tr>
+  <tr>
+
+ 
+  <td>Date of Birth</td>
+
+
+
+<td>
+<input type="DATE" > </td>
+
+
+
+
+
+</tr> 
+<tr>
+<td> Aadhar No.</td>
+<td><input type="text" name="father's name" id="fathername"
+
+  size="30"></td>
+
+  </tr>
+<tr>
+<td>Nationality </td>
+<td><select name="nationality">
+
+  <option value="-1" selected>select..</option>
+
+<option value="Indian"> Indian </option>
+<option value="American">American </option>
+<option value="African"> African </option>
+<option value="Russian"> Russian </option>
+</tr>
+<tr>
+<td> Religion </td>
+<td><select name="nationality">
+
+  <option value="-1" selected>select..</option>
+
+<option value="Hindu"> Hindu </option>
+<option value="Muslim">Muslim </option>
+<option value="Sikh"> Sikh </option>
+<option value="Christan"> Christan </option>
+</tr>
+
+
+<td> Physically Handicapped </td>
+<td><input type="radio" name="handicapped" value="Yes" size="10">Yes
+
+  <input type="radio" name="handicapped" value="No" size="10">No
+ 
+</td>
+</table>
+
+
+
+
+
+
+  </fieldset>
+
+
+
+
+<fieldset style="border:1px solid black">
+<table>
+  <legend> <b> Address</b> </legend>
+  <td> personal address </td>
+
+  <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+
+  </tr>
+
+
+<tr>
+
+  <td>City</td>
+
+  <td><select name="City">
+
+  <option value="-1" selected>select..</option>
+
+  <option value="New Delhi">NEW DELHI</option>
+
+  <option value="Mumbai">MUMBAI</option>
+
+  <option value="Goa">GOA</option>
+
+  <option value="Patna">PATNA</option>
+
+  </select></td>
+
+  </tr>
+
+
+<tr>
+
+  <td>Course</td>
+
+  <td><select name="Course">
+
+  <option value="-1" selected>select..</option>
+   <option value="BVOC">BVOC</option>
+
+  <option value="B.Tech">B.TECH</option>
+
+  <option value="MCA">MCA</option>
+
+  <option value="MBA">MBA</option>
+
+  <option value="BCA">BCA</option>
+
+  </select></td>
+
+  </tr>
+
+<tr>
+
+  <td>District</td>
+
+  <td><select name="District">
+
+  <option value="-1" selected>select..</option>
+
+  <option value="South-West Delhi">South-West Delhi</option>
+
+  <option value="North-West Delhi">North-West Delhi</option>
+
+  <option value="East-Delhi">East-Delhi</option>
+
+  <option value="West-Delhi">West-Delhi</option>
+
+  </select></td>
+
+</tr>
+
+<tr>
+
+  <td>State</td>
+
+  <td><select Name="State">
+    <option value="-1" selected>select..</option>
+
+
+
+  <option value="New Delhi">NEW DELHI</option>
+
+  <option value="Mumbai">MUMBAI</option>
+
+  <option value="Goa">GOA</option>
+
+  <option value="Bihar">BIHAR</option>
+
+  </select></td>
+
+  </tr>
+
+  <tr>
+
+  <td>PinCode</td>
+
+  <td><input type="text" name="pincode"  placeholder="pincode"id="pincode" size="20"></td>
+
+</tr>
+
+ 
+
+  </table>
+</fieldset>
+
+
+<fieldset style="border:1px solid black">
+<table>
+<legend> <b> Contact Details </legend> </b>
+<tr>
+  <td>Email Id</td>
+
+  <td><input type="text" name="emailid" id="emailid" placeholder="Email id" size="30"></td>
+
+ 
+ <td>MobileNo</td>
+
+  <td><input type="text" name="mobileno" placeholder="Enter your valid mobile no
+  " id="mobile no" size="30"></td>
+
+  </tr>
+</table>
+</fieldset>
+
+
+<fieldset style="border:1px solid black">
+
+
+<legend> <b>  Qualification </legend></b>
+
+  
+<tr>
+
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+</tr>
+  </table>
+</fieldset>
+
+<br>
+<br>
+
+  <button id="reset">Reset </button>
+<button class="submit"> Submit </button>
+
+
+  
+  </form>
+
+
+  </body>
+
+  </html>
